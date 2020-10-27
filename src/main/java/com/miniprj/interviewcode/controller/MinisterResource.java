@@ -59,10 +59,10 @@ public class MinisterResource {
 	@ApiOperation(httpMethod = "GET", value = "Get list Minister", response = String.class, responseContainer = "List")
 	@ApiResponses(value = { @ApiResponse(code = 404, message = "Minister not found"),
 			@ApiResponse(code = 500, message = "The Minister could not be fetched") })
-//	@ApiImplicitParams({
-//		@ApiImplicitParam(name = "Authorization", value = "Authorization token", required = true, dataType = "string", paramType = "header") })
+	@ApiImplicitParams({
+		@ApiImplicitParam(name = "Authorization", value = "Authorization token", required = true, dataType = "string", paramType = "header") })
 	@GetMapping("/list")
-//	@PreAuthorize("hasRole('USER')")
+	@PreAuthorize("hasRole('USER')")
 	public CompletableFuture<List<Minister>> getListMinister() throws InterruptedException {
 
 
@@ -72,14 +72,12 @@ public class MinisterResource {
 	
 	
 	@ApiOperation(httpMethod = "POST", value = "Post Minister", response = String.class, responseContainer = "List")
-//	@ApiImplicitParams({
-//		@ApiImplicitParam(name = "Authorization", value = "Authorization token", required = true, dataType = "string", paramType = "header") })
-
 	@RequestMapping(value = "/post", method = RequestMethod.POST)
 	@ApiImplicitParams({
+		@ApiImplicitParam(name = "Authorization", value = "Authorization token", required = true, dataType = "string", paramType = "header"),
 			@ApiImplicitParam(name = "minister", value = "List of strings", paramType = "body", dataType = "Minister") })
 	@ResponseBody
-//	@PreAuthorize("hasRole('USER')")
+	@PreAuthorize("hasRole('USER')")
 	public ResponseEntity<Object> postListMinister(@RequestBody final RequestMinisterDTO req)
 			throws InterruptedException {
 		ministerClient.getAdd(req);
@@ -92,11 +90,11 @@ public class MinisterResource {
 	@ApiOperation(httpMethod = "PUT", value = "Edit Minister", response = String.class, responseContainer = "List")
 	@ApiImplicitParams({
 			@ApiImplicitParam(name = "nik", value = "Nik value", required = true, dataType = "Long", paramType = "path"),
-//			@ApiImplicitParam(name = "Authorization", value = "Authorization token", required = true, dataType = "string", paramType = "header") }
-	})
+  		@ApiImplicitParam(name = "Authorization", value = "Authorization token", required = true, dataType = "string", paramType = "header") })
+
 	@RequestMapping(value = "/edit/{nik}", method = RequestMethod.PUT)
 	@ResponseBody
-//	@PreAuthorize("hasRole('USER')")
+	@PreAuthorize("hasRole('USER')")
 	public ResponseEntity<Object> editListMinister(@PathVariable Long nik, @RequestBody RequestMinisterUpdDTO req)
 			throws InterruptedException {
 
@@ -109,12 +107,12 @@ public class MinisterResource {
 	
 	@ApiOperation(httpMethod = "DELETE", value = "Delete Minister", response = String.class, responseContainer = "List")
 	@ApiImplicitParams({
-			@ApiImplicitParam(name = "nik", value = "Nik value", required = true, dataType = "Long", paramType = "path"),
-//			@ApiImplicitParam(name = "Authorization", value = "Authorization token", required = true, dataType = "string", paramType = "header") }
-	})
+			
+			@ApiImplicitParam(name = "Authorization", value = "Authorization token", required = true, dataType = "string", paramType = "header"),
+			@ApiImplicitParam(name = "nik", value = "Nik value", required = true, dataType = "Long", paramType = "path")})
 	@RequestMapping(value = "/delete/{nik}", method = RequestMethod.DELETE)
 	@ResponseBody
-//	@PreAuthorize("hasRole('USER')")
+	@PreAuthorize("hasRole('USER')")
 	public ResponseEntity<Object>  deleteListMinister(@PathVariable Long nik)
 			throws InterruptedException {
 
