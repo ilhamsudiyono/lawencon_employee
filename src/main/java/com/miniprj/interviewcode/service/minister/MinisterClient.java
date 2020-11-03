@@ -27,11 +27,8 @@ public class MinisterClient {
 	
 	@Async("asyncExecutor")
 	public CompletableFuture<List<Minister>> getList() throws InterruptedException {
-		logger.info("========List Minister=========");
 		String url = "http://localhost:9090/minister/list";
 		Minister[] response = restTemplate.getForObject(url, Minister[].class);
-
-		logger.info("========Minister Data {}=========" + response);
 
 		return CompletableFuture.completedFuture(Arrays.asList(response));
 	}
@@ -81,7 +78,6 @@ public class MinisterClient {
 		
 		Map<String, String> params = new HashMap<String, String>();
 		params.put("nik", nik.toString());
-			
 		restTemplate.delete(url, params);
 		
 		return new CompletableFuture<Void>();
