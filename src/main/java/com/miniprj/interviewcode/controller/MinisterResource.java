@@ -57,8 +57,6 @@ public class MinisterResource {
 	}
 
 	@ApiOperation(httpMethod = "GET", value = "Get list Minister", response = String.class, responseContainer = "List")
-	@ApiResponses(value = { @ApiResponse(code = 404, message = "Minister not found"),
-			@ApiResponse(code = 500, message = "The Minister could not be fetched") })
 	@ApiImplicitParams({
 		@ApiImplicitParam(name = "Authorization", value = "Authorization token", required = true, dataType = "string", paramType = "header") })
 	@GetMapping("/list")
