@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.miniprj.interviewcode.model.Role;
-import com.miniprj.interviewcode.model.RoleName;
+import com.miniprj.interviewcode.model.role.Role;
+import com.miniprj.interviewcode.model.role.RoleName;
 import com.miniprj.interviewcode.repository.IRoleRepository;
 import com.miniprj.interviewcode.service.user.IRoleService;
 

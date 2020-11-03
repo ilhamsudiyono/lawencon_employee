@@ -1,4 +1,4 @@
-package com.miniprj.interviewcode.model;
+package com.miniprj.interviewcode.model.DTO;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;

@@ -65,7 +65,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.miniprj.interviewcode.config.WebMvcConfig;
 import com.miniprj.interviewcode.config.WebSecurityConfig;
 import com.miniprj.interviewcode.controller.MinisterResource;
-import com.miniprj.interviewcode.model.Minister;
+import com.miniprj.interviewcode.model.minister.Minister;
 import com.miniprj.interviewcode.service.minister.MinisterClient;
 import static org.springframework.test.web.servlet.setup.MockMvcBuilders.standaloneSetup;
 import static java.util.stream.Collectors.toList;

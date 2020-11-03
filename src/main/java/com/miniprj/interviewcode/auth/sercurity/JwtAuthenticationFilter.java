@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import com.miniprj.interviewcode.model.User;
+import com.miniprj.interviewcode.model.user.User;
 import com.miniprj.interviewcode.service.user.IUserService;
 
 import javax.servlet.FilterChain;

@@ -30,9 +30,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.miniprj.interviewcode.model.Minister;
-import com.miniprj.interviewcode.model.RequestMinisterDTO;
-import com.miniprj.interviewcode.model.RequestMinisterUpdDTO;
+import com.miniprj.interviewcode.model.DTO.RequestMinisterDTO;
+import com.miniprj.interviewcode.model.DTO.RequestMinisterUpdDTO;
+import com.miniprj.interviewcode.model.minister.Minister;
 import com.miniprj.interviewcode.service.minister.MinisterClient;
 
 import io.swagger.annotations.Api;

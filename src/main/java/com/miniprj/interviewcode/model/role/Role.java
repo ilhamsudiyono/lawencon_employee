@@ -1,4 +1,4 @@
-package com.miniprj.interviewcode.model;
+package com.miniprj.interviewcode.model.role;
 
 import java.io.Serializable;
 import javax.persistence.*;

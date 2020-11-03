@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import com.miniprj.interviewcode.auth.sercurity.CurrentUser;
 import com.miniprj.interviewcode.auth.sercurity.UserPrincipal;
-import com.miniprj.interviewcode.model.UserSummary;
+import com.miniprj.interviewcode.model.user.UserSummary;
 import com.miniprj.interviewcode.repository.IUserRepository;
 
 import io.swagger.annotations.ApiImplicitParam;

@@ -1,4 +1,4 @@
-package com.miniprj.interviewcode.model;
+package com.miniprj.interviewcode.model.role;
 
 public enum  RoleName {
     ROLE_USER,

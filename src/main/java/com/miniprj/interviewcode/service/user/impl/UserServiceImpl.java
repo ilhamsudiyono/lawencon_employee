@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.miniprj.interviewcode.model.User;
+import com.miniprj.interviewcode.model.user.User;
 import com.miniprj.interviewcode.repository.IRoleRepository;
 import com.miniprj.interviewcode.repository.IUserRepository;
 import com.miniprj.interviewcode.service.user.IUserService;

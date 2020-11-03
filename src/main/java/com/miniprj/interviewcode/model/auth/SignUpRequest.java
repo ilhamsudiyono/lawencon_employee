@@ -1,4 +1,4 @@
-package com.miniprj.interviewcode.model.payload;
+package com.miniprj.interviewcode.model.auth;
 
 import java.sql.Timestamp;
 import java.time.Instant;

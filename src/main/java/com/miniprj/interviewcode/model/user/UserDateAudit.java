@@ -1,4 +1,4 @@
-package com.miniprj.interviewcode.model;
+package com.miniprj.interviewcode.model.user;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.springframework.data.annotation.CreatedBy;

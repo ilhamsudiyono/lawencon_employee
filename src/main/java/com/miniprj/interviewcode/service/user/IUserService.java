@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.data.repository.query.Param;
 
-import com.miniprj.interviewcode.model.User;
+import com.miniprj.interviewcode.model.user.User;
 
 public interface IUserService {
 

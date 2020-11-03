@@ -1,4 +1,4 @@
-package com.miniprj.interviewcode.model;
+package com.miniprj.interviewcode.model.auth;
 
 import javax.validation.constraints.NotBlank;
 

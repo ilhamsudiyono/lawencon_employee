@@ -22,13 +22,13 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.miniprj.interviewcode.auth.sercurity.JwtTokenProvider;
 import com.miniprj.interviewcode.auth.sercurity.UserPrincipal;
-import com.miniprj.interviewcode.model.LoginRequest;
-import com.miniprj.interviewcode.model.Role;
-import com.miniprj.interviewcode.model.RoleName;
-import com.miniprj.interviewcode.model.User;
+import com.miniprj.interviewcode.model.auth.LoginRequest;
+import com.miniprj.interviewcode.model.auth.SignUpRequest;
 import com.miniprj.interviewcode.model.payload.ApiResponse;
 import com.miniprj.interviewcode.model.payload.JwtAuthenticationResponse;
-import com.miniprj.interviewcode.model.payload.SignUpRequest;
+import com.miniprj.interviewcode.model.role.Role;
+import com.miniprj.interviewcode.model.role.RoleName;
+import com.miniprj.interviewcode.model.user.User;
 import com.miniprj.interviewcode.repository.IRoleRepository;
 import com.miniprj.interviewcode.repository.IUserRepository;
 import com.miniprj.interviewcode.service.user.impl.UserServiceImpl;

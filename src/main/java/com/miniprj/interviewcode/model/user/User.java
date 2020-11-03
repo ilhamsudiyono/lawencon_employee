@@ -1,4 +1,4 @@
-package com.miniprj.interviewcode.model;
+package com.miniprj.interviewcode.model.user;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
@@ -29,6 +29,7 @@ import javax.validation.constraints.Size;
 import org.hibernate.annotations.NaturalId;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.miniprj.interviewcode.model.role.Role;
 
 @Entity
 @Table(name = "m_user", uniqueConstraints = { @UniqueConstraint(columnNames = { "no_telp" }),

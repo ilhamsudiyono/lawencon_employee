@@ -1,7 +1,7 @@
 package com.miniprj.interviewcode.auth.sercurity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.miniprj.interviewcode.model.User;
+import com.miniprj.interviewcode.model.user.User;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

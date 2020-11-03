@@ -11,7 +11,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
-import com.miniprj.interviewcode.model.User;
+import com.miniprj.interviewcode.model.user.User;
 
 
 

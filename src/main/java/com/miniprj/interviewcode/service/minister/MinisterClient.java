@@ -14,9 +14,9 @@ import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import com.miniprj.interviewcode.model.Minister;
-import com.miniprj.interviewcode.model.RequestMinisterDTO;
-import com.miniprj.interviewcode.model.RequestMinisterUpdDTO;
+import com.miniprj.interviewcode.model.DTO.RequestMinisterDTO;
+import com.miniprj.interviewcode.model.DTO.RequestMinisterUpdDTO;
+import com.miniprj.interviewcode.model.minister.Minister;
 
 @Service
 public class MinisterClient {
