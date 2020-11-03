@@ -89,7 +89,6 @@ public class MinisterResource {
 	@ApiImplicitParams({
 			@ApiImplicitParam(name = "nik", value = "Nik value", required = true, dataType = "Long", paramType = "path"),
   		@ApiImplicitParam(name = "Authorization", value = "Authorization token", required = true, dataType = "string", paramType = "header") })
-
 	@RequestMapping(value = "/edit/{nik}", method = RequestMethod.PUT)
 	@ResponseBody
 	@PreAuthorize("hasRole('USER')")
@@ -105,7 +104,6 @@ public class MinisterResource {
 	
 	@ApiOperation(httpMethod = "DELETE", value = "Delete Minister", response = String.class, responseContainer = "List")
 	@ApiImplicitParams({
-			
 			@ApiImplicitParam(name = "Authorization", value = "Authorization token", required = true, dataType = "string", paramType = "header"),
 			@ApiImplicitParam(name = "nik", value = "Nik value", required = true, dataType = "Long", paramType = "path")})
 	@RequestMapping(value = "/delete/{nik}", method = RequestMethod.DELETE)
